@@ -129,7 +129,7 @@ h1 {
 
 .tile-title {
   color: white;
-  font-size: 2.25rem;
+  font-size: clamp(1.9rem, 3vw, 2.25rem);
   font-weight: 900;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.36);
 }
@@ -193,7 +193,7 @@ h1 {
 }
 
 .animal-panel p:not(.eyebrow) {
-  margin: 22px 0 30px;
+  margin: 22px 0 24px;
   max-width: 560px;
   color: var(--muted);
   font-size: clamp(1.05rem, 2.6vw, 1.35rem);
@@ -217,7 +217,23 @@ h1 {
   align-self: center;
 }
 
-.dogs-panel {
+.benefit-list {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.benefit-list li {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+  padding: 12px 14px;
+  font-weight: 900;
+}
+
+.speaking-panel {
   border-top: 8px solid #f96f5d;
 }
 
